@@ -11,7 +11,7 @@ module.exports = {
 	module: {
 		loaders: [
 		  {
-		  	loader: 'babel',
+		  	loader: 'babel-loader',
 		  	query: {
 		  		presets: ['es2015']
 		  	},
@@ -21,3 +21,6 @@ module.exports = {
 		]
 	}
 }
+
+process.traceDeprecation = true
+process.noDeprecation = true
